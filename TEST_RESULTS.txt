@@ -1,0 +1,16 @@
+ok 1 - AUTH: register returns 201 + JWT
+ok 2 - AUTH: duplicate email rejected (409)
+ok 3 - AUTH: wrong password rejected (401)
+ok 4 - AUTH: login succeeds (200)
+ok 5 - PROTECTED: no token -> 401
+ok 6 - PROTECTED: bad token -> 401
+ok 7 - PROTECTED: /me with token -> 200
+ok 8 - CRUD: Create task (201)
+ok 9 - CRUD: validation error (400)
+ok 10 - CRUD: Read list + single (200)
+ok 11 - CRUD: Update task (200)
+ok 12 - AUTHZ: other user cannot access my task (404)
+ok 13 - CRUD: Delete task (204) then 404
+# tests 13
+# pass 13
+# fail 0
